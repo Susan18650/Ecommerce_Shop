@@ -1,0 +1,203 @@
+/*------ 25. My account Page  ------*/
+@import "variables";
+@import "common";
+
+.myaccount-wrapper {
+  .accordion {
+    &-item {
+      margin-bottom: 20px;
+      border: 1px solid #ebebeb;
+    }
+
+    &-button {
+      background-color: #f9f9f9;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0;
+      text-transform: uppercase;
+      color: #242424;
+      display: block;
+      padding: 16px 55px;
+      position: relative;
+
+      span {
+        color: #242424;
+        font-size: 15px;
+        left: 20px;
+        position: absolute;
+        top: 16px;
+      }
+
+      &[aria-expanded="true"] {
+        border-bottom: 1px solid #ebebeb;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      @media #{$xs-layout} {
+        line-height: 22px;
+        font-size: 14px;
+        padding: 16px 30px 16px 40px;
+      }
+
+      &:hover {
+        color: $theme-color;
+      }
+
+      &::before {
+        color: #000;
+        content: "\f107";
+        display: inline-block;
+        font-family: "FontAwesome";
+        font-size: 16px;
+        position: absolute;
+        right: 10px;
+        top: 19px;
+      }
+
+      &:hover::before {
+        color: $theme-color;
+      }
+    }
+
+    &-body {
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+}
+
+.single-my-account {
+  .myaccount-info-wrapper {
+    padding: 0;
+    background-color: #fff;
+
+    .account-info-wrapper {
+      border-bottom: 1px solid #eaeaea;
+      margin-bottom: 28px;
+      padding-bottom: 30px;
+
+      h4 {
+        font-size: 15px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      h5 {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        margin-top: 7px;
+      }
+    }
+
+    .user-info {
+      margin-bottom: 20px;
+
+      label {
+        color: #000;
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+
+      input {
+        background: transparent none repeat scroll 0 0;
+        border: 1px solid #ebebeb;
+        color: #000;
+        height: 40px;
+        padding: 0 15px;
+      }
+
+      select {
+        background: transparent none repeat scroll 0 0;
+        border: 1px solid #ebebeb;
+        color: #000;
+        height: 40px;
+        padding: 0 15px;
+      }
+    }
+
+    .submit-update-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 26px;
+      align-items: center;
+
+      .submit-btn {
+        button {
+          background-color: #f2f2f2;
+          border: medium none;
+          color: #000;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1;
+          padding: 16px 35px 17px;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+
+          &:hover {
+            background: $theme-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.avatar-upload {
+  position: relative;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+
+  .avatar-edit {
+    position: absolute;
+    bottom: 0;
+    /* Đặt ở phía dưới */
+    right: 0;
+    /* Đặt ở phía bên phải */
+    z-index: 1;
+    margin: 0;
+
+    /* Loại bỏ khoảng cách xung quanh */
+    input {
+      display: none;
+
+      +label {
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 0;
+        border-radius: 100%;
+        background: #FFFFFF;
+        border: 1px solid transparent;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        font-weight: normal;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          background: #f1f1f1;
+          border-color: #d6d6d6;
+        }
+
+        &:after {
+          content: "\f040";
+          font-family: 'FontAwesome';
+          color: #757575;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          /* Đẩy nút vào giữa của hình tròn */
+        }
+      }
+    }
+  }
+}

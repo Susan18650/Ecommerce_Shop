@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Stint+Ultra+Expanded&display=swap');
+
+.description-container {
+    margin: 60px auto;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    max-width: 90%;
+    padding: 40px;
+    line-height: 1.5em;
+    text-align: justify;
+    border-radius: 8px;
+    max-height: 170px;
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.description-container.expanded {
+    max-height: none;
+    overflow: visible;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+a:hover {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.description-container .prompt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 9px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+}
+
+.description-container .prompt .style-1 {
+    border: 3px solid #000;
+    background: #000;
+    border-color: #000;
+    color: #fff;
+    font: 12px Montserrat;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    max-width: 250px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+    box-shadow: 0 0 15px 5px white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.description-container h3 {
+    font-family: "Merriweather", monospace;
+}

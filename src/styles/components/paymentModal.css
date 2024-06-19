@@ -1,0 +1,58 @@
+.modal.fade {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.fade.show {
+    opacity: 1;
+}
+.modal-content {
+    border-radius: 10px;
+  }
+#progress-bar {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 0.9s ease;
+  }
+  
+  .step {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.9s ease;
+  }
+  .step.active {
+    background-color: #27e530;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+    transform: scale(1.1);
+  }
+  .progress-bar-step{
+    position: relative;
+    width: 110px;
+    height: 3px;
+    background: #bfb0b0;
+    border-radius: 10px;
+  }
+ .progress-bar-step.active{
+    background: #27e530;
+  }
+  .modal-title{
+    font-weight: bold;
+  }
+  #checkoutStep1 h3 {
+    text-align: center;
+  }
+  #checkoutStep2 h3 {
+    text-align: center;
+  }

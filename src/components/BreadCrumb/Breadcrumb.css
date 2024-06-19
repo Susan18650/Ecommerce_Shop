@@ -1,0 +1,26 @@
+.breadcrumb {
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  padding: 18px;
+  margin: 0;
+}
+
+.breadcrumb-separator {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 5px;
+}
+
+.breadcrumb-link {
+  text-decoration: none;
+}
+
+.breadcrumb-link, .breadcrumb-text {
+  font-weight: bold !important;
+  font-size: 1em !important;
+  color: black !important;
+}
+.breadcrumb-link:hover, .breadcrumb-text:hover {
+  color: red !important;
+}
+

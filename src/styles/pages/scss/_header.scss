@@ -1,0 +1,65 @@
+/*----- 2. Header style ----*/
+@import "variables";
+@import "common";
+
+
+.User-Dropdown {
+  position: absolute;
+  z-index: 220;
+  top: 190%;
+  right: 0;
+
+  visibility: hidden;
+
+  width: 125px;
+  padding: 8px 12px 10px;
+
+  transition: all 0.5s ease 0s;
+  transform: rotateX(90deg);
+  transform-origin: center top 0;
+  text-align: left;
+
+  opacity: 0;
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
+  &.U-open {
+    visibility: visible;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  @media #{$xs-layout} {
+    top: 100%;
+
+    margin-top: 14px;
+  }
+  @media #{$md-layout} {
+    top: 100%;
+
+    margin-top: 14px;
+  }
+  @media #{$lg-layout} {
+    left: -40px;
+  }
+  @media #{$xl-layout} {
+    left: -34px;
+  }
+  ul {
+    li {
+      a {
+        font-size: 15px;
+        line-height: 30px;
+
+        display: block;
+
+        padding: 0;
+
+        text-transform: capitalize;
+
+        color: #000;
+        &:hover {
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}

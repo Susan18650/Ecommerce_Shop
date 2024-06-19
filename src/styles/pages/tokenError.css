@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.verify-reset-token-error-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tomorrow', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to top, #2e1753, #1f1746, #131537, #0d1028, #050819);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.verify-reset-token-error-page .text {
+    position: absolute;
+    top: 10%;
+    color: #fff;
+    text-align: center;
+}
+
+.verify-reset-token-error-page .text h1 {
+    font-size: 50px;
+}
+
+.verify-reset-token-error-page .text a {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    right: 0;
+    animation: starTwinkle 3s infinite linear;
+}
+
+.verify-reset-token-error-page .astronaut img {
+    width: 100px;
+    position: fixed;
+    top: 55%;
+    animation: astronautFly 6s infinite linear;
+}
+
+@keyframes astronautFly {
+    0% {
+        left: -100px;
+    }
+
+    25% {
+        top: 50%;
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+        top: 55%;
+    }
+
+    75% {
+        top: 60%;
+        transform: rotate(30deg);
+    }
+
+    100% {
+        left: 110%;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes starTwinkle {
+    0% {
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    25% {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    50% {
+        background: rgba(255, 255, 255, 1);
+    }
+
+    75% {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.4);
+    }
+}

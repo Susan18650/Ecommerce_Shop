@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@200;300;400;500;600;700&display=swap');
+
+
+.cart-page{
+    margin: 130px auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-info .product-title {
+    font-weight:300;
+    font-size: 20px;
+}
+.cart-info .btn-remove {
+    background: #ff523b;
+    color: white;
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.cart-info .btn-remove:hover{
+    background-color: #f78778;
+    color: black;
+}
+.cart-info .product-info{
+    font-size: 15px;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: black;
+    font-weight: 500;
+    border-bottom: 1px solid #bfb0b0;
+}
+td{
+    padding: 15px 5px;
+}
+td .input-container {
+    display: flex;
+    align-items: center;
+}
+  
+td .input-container input[type="number"] {
+    width: 70px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    margin: 0 10px;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+  
+td .input-container button {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+  
+td .input-container button:hover {
+    background-color: #0056b3;
+}
+td .btn-redeem-voucher{
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 255, 0, 0.942);
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+td .btn-redeem-voucher:hover{
+    background: rgba(49, 221, 49, 0.835);
+    color: white;
+}
+td .btn-checkout{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(6, 215, 6, 0.808);
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+td .btn-checkout:hover{
+    background: rgb(77, 255, 77);
+    color: black;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.final-total-text{
+    font-weight: bold;
+    font-size: 30px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table {
+    border-top: 2px solid rgb(164, 164, 164);
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+header {
+    transition: 0.4s;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+  }
+  
+  /* navbar */
+  .navbar {
+    background-color: aliceblue;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 70px;
+  }
+  
+
+  /* logo  */
+  .logo {
+    padding-left: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Amatic SC', 'Heveltica Neue', Arial, sans-serif;
+  }
+  
+  
+  /* ul  */
+  .navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    z-index: 100;
+    padding-top: 20px;
+  }
+  .activenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 50%;
+    transition: 0.4s;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  }
+  
+  
+  /* media queries */
+  
+  @media screen and (max-width: 832px){
+    
+    /* hamburger */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bar {
+          background-color: #120f0b;
+          width: 20px;
+          height: 3px;
+          display: block;
+          margin: 5px;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+      }
+  
+    /* adding active class to the bars  */
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+  
+    /* navMenu */
+  
+    .navMenu{
+      position: absolute;
+      flex-direction: column;
+      gap: 0;
+      top: 70px;
+      left: -100%;
+      text-align: start;
+      width: 100%;
+      transition: 0.7s ease-in-out;
+      background-color: aliceblue;
+      padding: 10px;
+    }
+  
+    .navMenu.active{
+      left: 0;
+    }
+  
+    .navMenu li {
+      margin: 16px 0;
+    }
+    
+  }

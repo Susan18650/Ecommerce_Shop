@@ -165,7 +165,7 @@ export const CheckOrder = () => {
                 </div>
             ) : null}
             <ToastContainer />
-            <Cursor />
+            {/* <Cursor /> */}
             <Footer />
         </>
     )

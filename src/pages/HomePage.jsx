@@ -17,7 +17,7 @@ const Homepage = () => {
             <br />
             <Testimonials/>
             <GoToTop />
-            <Cursor/>
+            {/* <Cursor/> */}
             <Footer />
         </div>
     );

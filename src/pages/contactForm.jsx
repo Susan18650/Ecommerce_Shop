@@ -144,7 +144,7 @@ export const Contact = () => {
                 </div>
             </div>
             <ToastContainer />
-            <Cursor />
+            {/* <Cursor /> */}
             <Footer />
         </>
     )

@@ -755,7 +755,7 @@ const MyAccount = () => {
             </div>
             <ToastContainer />
             <Footer />
-            <Cursor />
+            {/* <Cursor /> */}
             <CustomerOrderModal open={orderModal} onClose={() => setOrderModal(false)} customer={selectedCustomer} orderDate={selectedOrderDate} orderStatus={selectedOrderStatus} orderCost={selectedOrderCost} orderDiscount={selectedOrderDiscount} orderId={orderId} />
         </Fragment>
     )

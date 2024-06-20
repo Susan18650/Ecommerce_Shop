@@ -72,7 +72,7 @@ const ForgotPassword = () => {
                 </div>
             </div>
             <ToastContainer/>
-            <Cursor/>
+            {/* <Cursor/> */}
         </div>
     )
 }

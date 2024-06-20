@@ -313,7 +313,7 @@ const LoginRegister = () => {
                 </div>
             </div>
             <ToastContainer />
-            <Cursor />
+            {/* <Cursor /> */}
             <Footer />
         </div>
     );

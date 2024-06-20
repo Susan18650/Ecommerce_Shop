@@ -73,7 +73,7 @@ const ProductInformation = () => {
             <ProductDescription />
             <ProductRelated />
             <GoToTop/>
-            <Cursor/>
+            {/* <Cursor/> */}
             <Footer />
         </div>
     )

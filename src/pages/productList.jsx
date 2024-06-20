@@ -39,7 +39,7 @@ const ProductList = () => {
         </section>
       </div>
       <GoToTop />
-      <Cursor />
+      {/* <Cursor /> */}
       <Footer />
     </Wrapper>
   );

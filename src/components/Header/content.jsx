@@ -81,7 +81,7 @@ const Content = () => {
                                 <img src={imageUrl} alt={product.name} />
                                 <div className="introduce">
                                     <div className="title">{product.name}</div>
-                                    <div className="topic">{product.category.name}</div>
+                                    <div className="topic">{product.category[0].name}</div>
                                     <div className="des">{product.description}</div>
                                     <button className="red_button" onClick={() => handleGoShop(product._id)}>shop now</button>
                                 </div>

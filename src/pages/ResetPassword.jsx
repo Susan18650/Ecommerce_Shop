@@ -145,7 +145,7 @@ export const ResetPassword = () => {
                 </div>
                 <Footer />
                 <ToastContainer />
-                <Cursor />
+                {/* <Cursor /> */}
             </div>
         </>
     )

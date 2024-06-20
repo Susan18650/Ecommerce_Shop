@@ -157,7 +157,7 @@ const CartPage = () => {
                     {cartItemContent}
                 </>
             </div>
-            <Cursor />
+            {/* <Cursor /> */}
             <PaymentModal isOpen={showModal} onClose={() => setShowModal(false)} totalPrice={totalPrice} voucherCode={voucherCode} />
             <ToastContainer />
             <Footer />

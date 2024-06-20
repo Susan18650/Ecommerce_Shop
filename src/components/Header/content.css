@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-color: #F4F4F4;
     font-family: Poppins;
-    cursor: none;
+    /* cursor: none; */
 }
 
 :root {
@@ -37,7 +37,7 @@ body {
 /* button */
 .carousel .list .item .introduce .red_button {
     text-decoration: none;
-    cursor: none;
+    /* cursor: none; */
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -302,7 +302,7 @@ body {
 
 #prev,
 #next {
-    cursor: none;
+    /* cursor: none; */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -389,7 +389,7 @@ body {
     }
 
     .carousel .list .item .introduce .title {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .carousel .list .item .introduce .topic {
@@ -400,6 +400,7 @@ body {
         width: 140px;
         height: 40px;
         font-size: 11px;
+        margin-top: 20px;
     }
 
     .carousel .list {

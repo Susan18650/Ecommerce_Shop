@@ -73,6 +73,13 @@ const CartItems = ({ updateTotalPrice, setTotalPrice, discount }) => {
         return title;
     };
 
+    const cssString = `
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    `
 
     return (
         <>
@@ -93,6 +100,7 @@ const CartItems = ({ updateTotalPrice, setTotalPrice, discount }) => {
                         <td>
                             <div className="input-container">
                                 <button className="btn-decrement" onClick={() => handleQuantityChange(index, Math.max(1, item.quantity - 1))}>-</button>
+                                <style>{cssString}</style>
                                 <input
                                     className="input-quanlity"
                                     type="number"

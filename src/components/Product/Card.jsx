@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
                     <b className="text-secondary product-price text-decoration-line-through">${product.buyPrice}</b>
                     <b className="text-success mx-1 product-promo-price">${product.promotionPrice}</b>
                 </CardText>
-                <Button color="primary" size="1g" outline style={{ borderRadius: 20 }} onClick={handleGoShop}>Go Shop</Button>
+                <Button color="primary" size="1g" outline style={{ borderRadius: 20 }} onClick={handleGoShop}>Buy Now</Button>
             </CardBody>
         </Card>
     );

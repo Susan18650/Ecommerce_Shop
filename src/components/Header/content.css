@@ -185,7 +185,7 @@ body {
 .carousel .list .item:nth-child(2) .introduce .title,
 .carousel .list .item:nth-child(2) .introduce .topic,
 .carousel .list .item:nth-child(2) .introduce .des,
-.carousel .list .item .introduce .red_button {
+.carousel .list .item:nth-child(2) .introduce .red_button {
     opacity: 0;
     animation: showContent 0.5s 1s ease-in-out 1 forwards;
 }

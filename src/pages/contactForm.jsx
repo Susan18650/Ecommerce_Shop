@@ -67,7 +67,7 @@ export const Contact = () => {
     .cont{
         max-width: 70%;
         height: auto;
-        padding: 10px 25px;
+        padding: 10px 10px;
         margin: 5vh auto;
         background: #fff;
         border-radius: 8px;
@@ -89,7 +89,7 @@ export const Contact = () => {
       
       .input-name, .input-email {
         text-align: center;
-        width: 50%;
+        width: 85%;
         height: 45px;
         border: none;
         border-radius: 5px;
@@ -113,6 +113,8 @@ export const Contact = () => {
           padding: 11px 30px;
           text-transform: uppercase;
           transition: all 0.3s ease 0s;
+          max-width: 200px; /* chiều rộng tối đa là 200px */
+          width: 50%;
           &:hover {
             background-color: #a749ff;
             color: #fff;

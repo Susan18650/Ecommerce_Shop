@@ -54,7 +54,7 @@ export const CheckOrder = () => {
     .cont{
         max-width: 80%;
         height: 250px;
-        padding: 10px 25px;
+        padding: 10px 10px;
         margin: 5vh auto;
         background: #fff;
         border-radius: 8px;
@@ -76,8 +76,8 @@ export const CheckOrder = () => {
       
       .input-order {
         text-align: center;
-        width: 50%;
-        height: 45px;
+        width: 75%;
+        height:45px;
         border: none;
         border-radius: 5px;
         margin: auto;
@@ -101,6 +101,8 @@ export const CheckOrder = () => {
           padding: 11px 30px;
           text-transform: uppercase;
           transition: all 0.3s ease 0s;
+          max-width: 200px; /* chiều rộng tối đa là 200px */
+          width: 50%;
           &:hover {
             background-color: #a749ff;
             color: #fff;

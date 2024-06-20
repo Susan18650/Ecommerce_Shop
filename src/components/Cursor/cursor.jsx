@@ -212,7 +212,7 @@ const Cursor = () => {
       circle.x += (mouse.x - circle.x) * speed;
       circle.y += (mouse.y - circle.y) * speed;
 
-      const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
+      const translateTransform = `translate3d(${circle.x}px, ${circle.y}px, 0)`;
 
       const deltaMouseX = mouse.x - previousMouse.x;
       const deltaMouseY = mouse.y - previousMouse.y;

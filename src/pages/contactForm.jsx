@@ -134,7 +134,7 @@ export const Contact = () => {
                         <input type="text" className="input-name" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} />
                         <input type="text" className="input-email" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                         <div className="button-box">
-                            <button className="col-2" type="button" onClick={submitButton}>
+                            <button type="button" onClick={submitButton}>
                                 <span>SEND</span>
                             </button>
                         </div>

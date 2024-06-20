@@ -119,7 +119,7 @@ export const CheckOrder = () => {
                         <p className='check-order-title'>LOOK UP ORDER INFORMATION</p>
                         <input type="text" className="input-order" placeholder="Enter order code" value={inputOrder} onChange={(e) => setInputOrder(e.target.value)} />
                         <div className="button-box">
-                            <button className="col-2" type="button" onClick={submitButton}>
+                            <button type="button" onClick={submitButton}>
                                 <span>SEND</span>
                             </button>
                         </div>
